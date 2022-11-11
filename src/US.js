@@ -13,7 +13,6 @@ function Unsplash() {
         const data = await response.data;
         console.log(data);
         setGallery(data);
-
     }
     useEffect(() => {
         FetchAPI();
@@ -26,10 +25,7 @@ function Unsplash() {
             </h1>
             <hr style={{ color: 'black' }} />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <div style={{
-                    columnCount: 3, display: 'inline-block',
-                    justifyContent: 'center', alignItems: 'center', alignContent: 'center'
-                }}>
+                <div className="grid">
                     {images.length > 0 && (
                         <Images images={images} />
                     )}
