@@ -12,7 +12,7 @@ body{
   grid-row-gap: 1rem;
  
 }
-@media (max-width:780px) {
+@media (max-width:1200px) {
   .grid{
     flex-direction: row;
     display: grid;
